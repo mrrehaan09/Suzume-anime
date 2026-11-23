@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { Quote, Mic } from 'lucide-react';
 import { useGSAP } from '../hooks/useGSAP';
 import { gsap } from '../lib/gsap';
-import { CHARACTERS } from '../data/suzumeData';
+import { CHARACTERS, getAssetUrl } from '../data/suzumeData';
 import SectionHeader from '../components/common/SectionHeader';
 
 export function CharactersSection() {
@@ -100,7 +100,7 @@ export function CharactersSection() {
                   alt={selectedChar.name}
                   loading="lazy"
                   onError={(e) => {
-                    e.currentTarget.src = '/images/characters/suzume.jpg';
+                    e.currentTarget.src = getAssetUrl('/images/characters/suzume.jpg');
                   }}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-108 filter brightness-[0.92]"
                 />

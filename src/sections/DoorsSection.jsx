@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { Key, Lock, Unlock, MapPin, AlertTriangle, ShieldCheck, Sparkles, BookOpen } from 'lucide-react';
 import { useGSAP } from '../hooks/useGSAP';
 import { gsap } from '../lib/gsap';
-import { MYSTERIOUS_DOORS } from '../data/suzumeData';
+import { MYSTERIOUS_DOORS, getAssetUrl } from '../data/suzumeData';
 import SectionHeader from '../components/common/SectionHeader';
 
 export function DoorsSection() {
@@ -84,7 +84,7 @@ export function DoorsSection() {
           <div className="relative aspect-[16/10] sm:aspect-[21/9] w-full overflow-hidden">
             <img
               ref={heroImageRef}
-              src="/images/doors/mysterious_door.jpg"
+              src={getAssetUrl('/images/doors/mysterious_door.jpg')}
               alt="The Mysterious Freestanding Ruin Door"
               loading="lazy"
               className="w-full h-[120%] -mt-[10%] object-cover filter brightness-[0.88] contrast-[1.05]"
@@ -198,7 +198,7 @@ export function DoorsSection() {
                       alt={activeDoor.name}
                       loading="lazy"
                       onError={(e) => {
-                        e.currentTarget.src = '/images/doors/mysterious_door.jpg';
+                        e.currentTarget.src = getAssetUrl('/images/doors/mysterious_door.jpg');
                       }}
                       className="absolute inset-0 w-full h-full object-cover filter brightness-[0.75] group-hover:scale-110 transition-transform duration-700"
                     />
@@ -344,7 +344,7 @@ export function DoorsSection() {
                     alt={door.name}
                     loading="lazy"
                     onError={(e) => {
-                      e.currentTarget.src = '/images/doors/mysterious_door.jpg';
+                      e.currentTarget.src = getAssetUrl('/images/doors/mysterious_door.jpg');
                     }}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 filter brightness-[0.82]"
                   />

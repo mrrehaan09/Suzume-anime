@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { X, ChevronLeft, ChevronRight, Maximize2, MapPin } from 'lucide-react';
 import { useGSAP } from '../hooks/useGSAP';
 import { gsap } from '../lib/gsap';
-import { GALLERY_ITEMS } from '../data/suzumeData';
+import { GALLERY_ITEMS, getAssetUrl } from '../data/suzumeData';
 import SectionHeader from '../components/common/SectionHeader';
 
 export function GallerySection() {
@@ -120,7 +120,7 @@ export function GallerySection() {
                   alt={item.title}
                   loading="lazy"
                   onError={(e) => {
-                    e.currentTarget.src = '/images/doors/mysterious_door.jpg';
+                    e.currentTarget.src = getAssetUrl('/images/doors/mysterious_door.jpg');
                   }}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110 filter brightness-[0.88]"
                 />
@@ -225,7 +225,7 @@ export function GallerySection() {
                 src={activeItem.image}
                 alt={activeItem.title}
                 onError={(e) => {
-                  e.currentTarget.src = '/images/doors/mysterious_door.jpg';
+                  e.currentTarget.src = getAssetUrl('/images/doors/mysterious_door.jpg');
                 }}
                 className="w-full h-full max-h-[55vh] sm:max-h-[65vh] object-contain"
               />

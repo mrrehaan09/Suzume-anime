@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { MapPin, Eye, EyeOff, Sparkles } from 'lucide-react';
 import { useGSAP } from '../hooks/useGSAP';
 import { gsap } from '../lib/gsap';
-import { STORY_CHAPTERS } from '../data/suzumeData';
+import { STORY_CHAPTERS, getAssetUrl } from '../data/suzumeData';
 import SectionHeader from '../components/common/SectionHeader';
 
 export function StorySection() {
@@ -190,7 +190,7 @@ export function StorySection() {
                   alt={activeChapter.title}
                   loading="lazy"
                   onError={(e) => {
-                    e.currentTarget.src = '/images/doors/mysterious_door.jpg';
+                    e.currentTarget.src = getAssetUrl('/images/doors/mysterious_door.jpg');
                   }}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-108 filter brightness-[0.88]"
                 />

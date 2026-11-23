@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { Sparkles, Award, Globe, Clock, Clapperboard, Quote } from 'lucide-react';
 import { useGSAP } from '../hooks/useGSAP';
 import { gsap } from '../lib/gsap';
-import { MOVIE_DATA } from '../data/suzumeData';
+import { MOVIE_DATA, getAssetUrl } from '../data/suzumeData';
 import SectionHeader from '../components/common/SectionHeader';
 
 export function IntroSection() {
@@ -57,7 +57,7 @@ export function IntroSection() {
                   alt="Suzume Theatrical Key Visual"
                   loading="lazy"
                   onError={(e) => {
-                    e.currentTarget.src = '/images/doors/mysterious_door.jpg';
+                    e.currentTarget.src = getAssetUrl('/images/doors/mysterious_door.jpg');
                   }}
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-108 transition-transform duration-1000 ease-out filter brightness-[0.88]"
                 />

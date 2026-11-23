@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { Play, Music, Award, ExternalLink, Disc } from 'lucide-react';
 import { useGSAP } from '../hooks/useGSAP';
 import { gsap } from '../lib/gsap';
-import { VOICE_CAST, SOUNDTRACK_TRACKS, MOVIE_DATA } from '../data/suzumeData';
+import { VOICE_CAST, SOUNDTRACK_TRACKS, MOVIE_DATA, getAssetUrl } from '../data/suzumeData';
 import SectionHeader from '../components/common/SectionHeader';
 
 export function DetailsSection() {
@@ -93,7 +93,7 @@ export function DetailsSection() {
                   alt="Suzume Theatrical Trailer"
                   loading="lazy"
                   onError={(e) => {
-                    e.currentTarget.src = '/images/doors/mysterious_door.jpg';
+                    e.currentTarget.src = getAssetUrl('/images/doors/mysterious_door.jpg');
                   }}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-108 filter brightness-[0.72]"
                 />
