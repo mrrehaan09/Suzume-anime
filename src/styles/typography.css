@@ -1,0 +1,99 @@
+/* ==========================================================================
+   SUZUME CINEMATIC TYPOGRAPHY SYSTEM
+   ========================================================================== */
+
+/* Display Titles & Hero Branding */
+.font-cinematic {
+  font-family: var(--font-cinematic);
+  letter-spacing: 0.08em;
+}
+
+.font-japanese {
+  font-family: var(--font-japanese);
+}
+
+.font-sans-clean {
+  font-family: var(--font-sans);
+}
+
+/* Fluid responsive headings */
+.heading-display {
+  font-family: var(--font-cinematic);
+  font-size: clamp(2.5rem, 5.5vw + 1rem, 6.5rem);
+  line-height: 1.05;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.heading-section {
+  font-family: var(--font-cinematic);
+  font-size: clamp(1.75rem, 3.5vw + 0.5rem, 3.25rem);
+  line-height: 1.15;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.heading-subsection {
+  font-family: var(--font-cinematic);
+  font-size: clamp(1.25rem, 2vw + 0.5rem, 2rem);
+  line-height: 1.25;
+  letter-spacing: 0.06em;
+}
+
+/* Eyebrow & Badge Tags */
+.eyebrow-tag {
+  font-family: var(--font-cinematic);
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--suzume-chair-amber);
+}
+
+/* Japanese Editorial Vertical / Accent Typography */
+.writing-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: 0.35em;
+}
+
+/* Cinematic Text Glows */
+.text-glow-door {
+  text-shadow: 0 0 25px rgba(225, 29, 72, 0.7), 0 0 50px rgba(225, 29, 72, 0.3);
+}
+
+.text-glow-gold {
+  text-shadow: 0 0 25px rgba(245, 158, 11, 0.7), 0 0 50px rgba(245, 158, 11, 0.3);
+}
+
+.text-glow-tokoyo {
+  text-shadow: 0 0 30px rgba(129, 140, 248, 0.65), 0 0 60px rgba(99, 102, 241, 0.3);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 25px rgba(56, 189, 248, 0.7), 0 0 50px rgba(14, 165, 233, 0.3);
+}
+
+/* Cinematic Gradient Text Effects */
+.text-gradient-door {
+  background: linear-gradient(135deg, #ffffff 10%, #fb7185 50%, #e11d48 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #ffffff 15%, #fbbf24 60%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-tokoyo {
+  background: linear-gradient(135deg, #f8fafc 20%, #a5b4fc 60%, #6366f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-sky {
+  background: linear-gradient(135deg, #ffffff 20%, #7dd3fc 65%, #0284c7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

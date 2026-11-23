@@ -1,0 +1,59 @@
+:root {
+  /* ==========================================================================
+     SUZUME — BEYOND THE DOOR: MIDNIGHT COSMIC + SUZUME SUNSET THEME
+     ========================================================================== */
+
+  /* Global Core Palette (User Specified) */
+  --color-deep-midnight: #080D1C;
+  --color-navy-blue: #111B35;
+  --color-cosmic-purple: #30245B;
+  --color-electric-indigo: #6555B8;
+  --color-sky-cyan: #82D9F2;
+  --color-sunset-orange: #F5A66D;
+  --color-soft-cloud-white: #F2F0F8;
+
+  /* Aliases & Semantic Mapping */
+  --color-midnight-navy: #080D1C;
+  --color-sky-blue: #82D9F2;
+  --color-cloud-white: #F2F0F8;
+  --color-mist-blue: #82D9F2;
+
+  /* Movie Accents (Doors, Keystones, Calamity, Ever-After) */
+  --color-door-vermilion: #E11D48;
+  --color-door-crimson: #BE123C;
+  --color-door-glow: #F5A66D;
+  --color-door-wood: #2A1810;
+
+  --color-calamity-red: #EF4444;
+  --color-calamity-magenta: #BE185D;
+
+  --color-chair-amber: #F5A66D;
+  --color-chair-yellow: #F5A66D;
+  --color-key-gold: #F5A66D;
+
+  --color-tokoyo-indigo: #111B35;
+  --color-tokoyo-purple: #30245B;
+  --color-tokoyo-starlight: #6555B8;
+
+  /* Surfaces & Glassmorphism */
+  --bg-primary: #080D1C;
+  --bg-secondary: #111B35;
+  --bg-cosmic: #30245B;
+  --bg-card: rgba(17, 27, 53, 0.75);
+  --bg-card-hover: rgba(48, 36, 91, 0.65);
+  --border-subtle: rgba(101, 85, 184, 0.25);
+  --border-glow: rgba(130, 217, 242, 0.35);
+  --border-sunset: rgba(245, 166, 109, 0.4);
+  --border-door: rgba(225, 29, 72, 0.4);
+
+  /* Typography */
+  --font-cinematic: 'Cinzel', serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-japanese: 'Shippori Mincho', 'Noto Serif JP', serif;
+
+  /* Luminous Glows */
+  --glow-sunset: 0 0 35px rgba(245, 166, 109, 0.35);
+  --glow-cyan: 0 0 35px rgba(130, 217, 242, 0.35);
+  --glow-indigo: 0 0 35px rgba(101, 85, 184, 0.45);
+  --glow-door: 0 0 40px rgba(225, 29, 72, 0.45);
+}
