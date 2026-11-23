@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Midnight Cosmic Background -->
+  <rect width="64" height="64" rx="14" fill="#080D1C" />
+  <rect width="62" height="62" x="1" y="1" rx="13" stroke="#6555B8" stroke-width="1.5" stroke-opacity="0.5" />
+
+  <defs>
+    <!-- Celestial Portal Sunset Glow -->
+    <radialGradient id="portalGlow" cx="50%" cy="52%" r="48%">
+      <stop offset="0%" stop-color="#FFF5EA" stop-opacity="1" />
+      <stop offset="25%" stop-color="#F5A66D" stop-opacity="0.95" />
+      <stop offset="65%" stop-color="#6555B8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#080D1C" stop-opacity="0" />
+    </radialGradient>
+    
+    <linearGradient id="doorLeafGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#111B35" />
+      <stop offset="100%" stop-color="#1E294B" />
+    </linearGradient>
+  </defs>
+
+  <!-- Atmospheric Glow from the Ever-After (Tokoyo) -->
+  <circle cx="32" cy="33" r="16" fill="url(#portalGlow)" />
+
+  <!-- Door Portal Threshold / Base -->
+  <rect x="13" y="52" width="38" height="3" rx="1.5" fill="#82D9F2" opacity="0.85" />
+
+  <!-- Mysterious Japanese Freestanding Door Frame -->
+  <!-- Top Lintel Beam -->
+  <rect x="16" y="13" width="32" height="3.5" rx="1" fill="#82D9F2" />
+  <!-- Left Pillar / Jamb -->
+  <rect x="18" y="16" width="3.5" height="36" fill="#6555B8" />
+  <!-- Right Pillar / Jamb -->
+  <rect x="42.5" y="16" width="3.5" height="36" fill="#6555B8" />
+
+  <!-- Inner Portal Space with Golden Sunlight Flare -->
+  <circle cx="32" cy="33" r="4.5" fill="#F5A66D" />
+  <circle cx="32" cy="33" r="2" fill="#FFFDF8" />
+
+  <!-- The Open Door Leaf (Angled Inward Perspective) -->
+  <polygon points="21.5,16.5 35,18.5 35,50 21.5,52" fill="url(#doorLeafGrad)" stroke="#F5A66D" stroke-width="1.2" />
+  <!-- Door Knob / Lock Mechanism -->
+  <circle cx="32" cy="35" r="1.5" fill="#F5A66D" />
+
+  <!-- Celestial Starlight Accent Sparkles -->
+  <polygon points="49,7 50.5,10.5 54,12 50.5,13.5 49,17 47.5,13.5 44,12 47.5,10.5" fill="#82D9F2" />
+  <circle cx="12" cy="22" r="1.2" fill="#82D9F2" opacity="0.9" />
+</svg>
